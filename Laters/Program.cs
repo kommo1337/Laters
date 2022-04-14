@@ -7,7 +7,7 @@ class Program
         
         Latters(str, 'д', 'к');
     }
-    static void Latters(string str, char firstLater, char LastLater)
+    static void Latters(string str, char FirstLater, char LastLater)
     {
         str = str.ToLower();
         int first = 0;
@@ -16,11 +16,11 @@ class Program
         
         foreach (string word in words)
         {
-            if (word.StartsWith(firstLater))
+            if (word.StartsWith(FirstLater))
                 first++;
             else if (word.EndsWith(LastLater))
                 last++;
         }
-        Console.WriteLine($"Слов начинающихся с буквы {firstLater} {first}, а заканчивающихся на букву {LastLater} {last}");
+        Console.WriteLine($"Слов начинающихся с буквы {FirstLater} {first}, а заканчивающихся на букву {LastLater} {last}");
     }
 }
